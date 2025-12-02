@@ -201,3 +201,14 @@ footer {
     box-shadow: 0 8px 20px rgba(0, 120, 255, 0.4);
     filter: brightness(1.08);
 }
+
+.site-plan-link {
+    color: white;
+    text-decoration: none;
+}
+
+.site-plan-link:hover {
+    text-decoration: underline;
+    color: #bcd9ff; 
+}
+
