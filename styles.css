@@ -11,6 +11,7 @@ body {
     color: #1a1a1a;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -33,6 +34,7 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
 
 .hero {
     position: relative;
@@ -86,55 +88,57 @@ nav a:hover {
 
 .card {
     position: relative;
-    width: 28%;
     text-align: center;
+    width: 28%;
+    border-radius: 12px;
+    overflow: hidden;
     cursor: pointer;
 }
 
 .card img {
-    display: block;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
 }
 
-.card .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    padding: 20px;
-    border-radius: 10px;
-
-    background: rgba(0, 80, 160, 0.75);
-    color: #ffffff;
-    font-size: 1.3rem;
-
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
 .card:hover img {
     transform: scale(1.03);
-    box-shadow: 0 10px 25px rgba(0, 110, 255, 0.4);
+    box-shadow: 0 10px 25px rgba(0, 120, 255, 0.35);
     filter: brightness(1.05);
 }
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.22); 
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 16px;
+}
+
 
 .card:hover .overlay {
     opacity: 1;
 }
 
-.card h2 {
-    margin-top: 15px;
+
+.overlay-text {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 8px 14px;
+    border-radius: 999px;
+    color: #003366;
+    font-weight: bold;
+    font-size: 1rem;
 }
+
 
 .intro-section {
     display: flex;
@@ -157,6 +161,7 @@ nav a:hover {
     font-size: 2rem;
 }
 
+
 footer {
     background: #1c3f66;
     padding: 30px;
@@ -165,20 +170,24 @@ footer {
     margin-top: 40px;
 }
 
-.footer-nav a {
+.footer-nav a,
+.site-plan-link {
     color: white;
     text-decoration: none;
     margin: 0 10px;
 }
 
-.footer-nav a:hover {
+.footer-nav a:hover,
+.site-plan-link:hover {
     text-decoration: underline;
+    color: #bcd9ff;
 }
 
 .social img {
     width: 35px;
     margin: 10px;
 }
+
 
 .plane-page {
     display: flex;
@@ -214,15 +223,3 @@ footer {
     width: 45%;
     border-radius: 10px;
 }
-
-/* ste plan */
-.site-plan-link {
-    color: white;
-    text-decoration: none;
-}
-
-.site-plan-link:hover {
-    text-decoration: underline;
-    color: #bcd9ff;
-}
-
