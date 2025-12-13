@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boeing 737 | Boeing Info 2025</title>
+    <title>Boeing Info 2025 | Boeing 737</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,48 +16,59 @@
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="boeing737.html" class="active">Boeing 737</a>
+        <a href="boeing737.html">Boeing 737</a>
         <a href="boeing787.html">Boeing 787</a>
         <a href="boeing777.html">Boeing 777</a>
     </nav>
 </header>
 
-<main class="plane-page">
+<!-- PAGE-SCOPED WRAPPER -->
+<main class="page-737">
 
-    <!-- AIRCRAFT IMAGE AREA -->
-    <section class="plane-visual">
-        <img src="images/737infoimage.jpg" alt="Boeing 737 aircraft" class="plane-image">
+    <!-- HERO / MAIN INFO SECTION -->
+    <section class="plane-page">
 
-        <!-- Placeholder for future interactive hotspots -->
-        <!--
-        <div class="hotspot engine"></div>
-        <div class="hotspot wing"></div>
-        -->
+        <!-- IMAGE (hotspots will go on this later) -->
+        <div class="plane-image-wrapper">
+            <img
+                src="images/737infoimage.jpg"
+                class="plane-hero"
+                alt="Boeing 737 in flight">
+        </div>
+
+        <!-- TEXT INFO -->
+        <div class="plane-info">
+            <h1>Boeing 737</h1>
+
+            <p>
+                The Boeing 737 is the world’s most successful commercial jet aircraft.
+                Designed for short- to medium-haul routes, it is widely used by airlines
+                across the globe due to its efficiency, reliability, and versatility.
+            </p>
+
+            <h3>Quick Facts</h3>
+            <ul>
+                <li><strong>First flight:</strong> 1967</li>
+                <li><strong>Typical seating:</strong> 126–220 passengers</li>
+                <li><strong>Range:</strong> ~3,500 nautical miles</li>
+                <li><strong>Engines:</strong> CFM International</li>
+            </ul>
+
+            <p class="future-note">
+                In future versions, you will be able to click different parts of the aircraft
+                to learn more about engines, wings, landing gear, and cockpit systems.
+            </p>
+        </div>
+
     </section>
 
-    <!-- INFO PANEL -->
-    <aside class="plane-info">
-        <h1>Boeing 737</h1>
+    <!-- OPTIONAL GALLERY / SECOND SECTION -->
+    <section class="gallery">
 
-        <p>
-            The Boeing 737 is the world’s most successful commercial jet aircraft.
-            Designed for short- to medium-haul routes, it is used by airlines across
-            the globe for its efficiency, reliability, and versatility.
-        </p>
+        <img src="images/737max10.jpg" alt="Boeing 737 MAX">
+        <img src="images/unitedmax9.avif" alt="Boeing 737 operated by United Airlines">
 
-        <h2>Quick Facts</h2>
-        <ul>
-            <li><strong>First flight:</strong> 1967</li>
-            <li><strong>Typical seating:</strong> 126–220 passengers</li>
-            <li><strong>Range:</strong> ~3,500 nautical miles</li>
-            <li><strong>Engines:</strong> CFM International</li>
-        </ul>
-
-        <p class="note">
-            ✦ In future versions, click different parts of the aircraft to learn more
-            about engines, wings, landing gear, and cockpit systems.
-        </p>
-    </aside>
+    </section>
 
 </main>
 
