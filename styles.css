@@ -225,66 +225,86 @@ footer {
 }
 
 
-/* 737 page*/ 
+/*737 page */
 
-.plane-page {
-    display: flex;
-    gap: 50px;
-    padding: 60px 50px;
-    max-width: 1300px;
+.page-737 {
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 50px 20px;
 }
 
-.plane-visual {
-    flex: 1.3;
+.page-737 .plane-page {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.page-737 .plane-image-wrapper {
     position: relative;
+    width: 55%;
 }
 
-.plane-image {
+.page-737 .plane-hero {
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
-.plane-info {
-    flex: 1;
-    background: #f0f4fa;
+.page-737 .plane-info {
+    width: 45%;
+    background: #f4f7fb;
     padding: 30px;
-    border-radius: 14px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    border-radius: 12px;
 }
 
-.plane-info h1 {
-    font-size: 2.4rem;
+.page-737 .plane-info h1 {
     margin-bottom: 15px;
 }
 
-.plane-info h2 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    font-size: 1.4rem;
-}
-
-.plane-info ul {
-    padding-left: 20px;
-    line-height: 1.7;
-}
-
-.plane-info li {
-    margin-bottom: 6px;
-}
-
-.plane-info .note {
+.page-737 .plane-info h3 {
     margin-top: 20px;
-    font-size: 0.95rem;
-    color: #1c3f66;
+}
+
+.page-737 .plane-info ul {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+.page-737 .future-note {
+    margin-top: 20px;
     font-style: italic;
+    color: #444;
+}
+
+.page-737 .gallery {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.page-737 .gallery img {
+    width: 45%;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
 @media (max-width: 900px) {
-    .plane-page {
+    .page-737 .plane-page {
         flex-direction: column;
-        padding: 40px 20px;
+    }
+
+    .page-737 .plane-image-wrapper,
+    .page-737 .plane-info {
+        width: 100%;
+    }
+
+    .page-737 .gallery {
+        flex-direction: column;
+    }
+
+    .page-737 .gallery img {
+        width: 100%;
     }
 }
 
