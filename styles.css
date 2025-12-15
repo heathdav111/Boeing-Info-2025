@@ -315,3 +315,61 @@ footer {
         width: 100%;
     }
 }
+
+
+.plane-image-wrapper {
+    position: relative;
+}
+
+.hotspot {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: rgba(0, 120, 255, 0.85);
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(0, 120, 255, 0.6);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0, 120, 255, 0.6); }
+    70% { box-shadow: 0 0 0 12px rgba(0, 120, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 120, 255, 0); }
+}
+
+.hotspot.engine {
+    top: 48%;
+    left: 63%;
+}
+
+.hotspot.wing {
+    top: 42%;
+    left: 48%;
+}
+
+.hotspot.gear {
+    top: 63%;
+    left: 52%;
+}
+
+.hotspot.cockpit {
+    top: 33%;
+    left: 23%;
+}
+
+.hotspot-info {
+    display: none;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #f4f7fb;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.hotspot-info.active {
+    display: block;
+}
+
