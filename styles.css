@@ -308,3 +308,117 @@ footer {
     }
 }
 
+/* =====================================
+   BOEING 737 PAGE (SCOPED STYLES)
+   ===================================== */
+
+.page-737 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+/* Main layout */
+.page-737 .plane-page {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+/* Image wrapper (important for hotspots later) */
+.page-737 .plane-image-wrapper {
+    position: relative;
+    width: 55%;
+}
+
+/* Main aircraft image */
+.page-737 .plane-hero {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+/* Info card */
+.page-737 .plane-info {
+    width: 45%;
+    background: #f4f7fb;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.page-737 .plane-info h1 {
+    font-size: 2.4rem;
+    margin-bottom: 16px;
+    color: #1c3f66;
+}
+
+.page-737 .plane-info h3 {
+    margin-top: 26px;
+    margin-bottom: 12px;
+    color: #1c3f66;
+}
+
+.page-737 .plane-info p {
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.page-737 .plane-info ul {
+    padding-left: 20px;
+}
+
+.page-737 .plane-info li {
+    margin-bottom: 8px;
+}
+
+/* Future note text */
+.page-737 .future-note {
+    margin-top: 18px;
+    font-size: 0.95rem;
+    color: #444;
+    font-style: italic;
+}
+
+/* Gallery section */
+.page-737 .gallery {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.page-737 .gallery img {
+    width: 45%;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.page-737 .gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 14px 35px rgba(0, 120, 255, 0.35);
+}
+
+@media (max-width: 900px) {
+
+    .page-737 .plane-page {
+        flex-direction: column;
+    }
+
+    .page-737 .plane-image-wrapper,
+    .page-737 .plane-info {
+        width: 100%;
+    }
+
+    .page-737 .gallery {
+        flex-direction: column;
+    }
+
+    .page-737 .gallery img {
+        width: 100%;
+    }
+}
+
