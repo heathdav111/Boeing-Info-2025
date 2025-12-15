@@ -27,10 +27,18 @@
     <section class="plane-page">
 
         <div class="plane-image-wrapper">
+
             <img
                 src="images/737infoimage.jpg"
                 class="plane-hero"
                 alt="Boeing 737 in flight">
+
+        
+            <button class="hotspot engine" data-target="engine-info" aria-label="Engine information"></button>
+            <button class="hotspot wing" data-target="wing-info" aria-label="Wing information"></button>
+            <button class="hotspot gear" data-target="gear-info" aria-label="Landing gear information"></button>
+            <button class="hotspot cockpit" data-target="cockpit-info" aria-label="Cockpit information"></button>
+
         </div>
 
         <div class="plane-info">
@@ -38,8 +46,8 @@
 
             <p>
                 The Boeing 737 is the world’s most successful commercial jet aircraft.
-                Designed for short- to medium-haul routes, it is used by airlines
-                worldwide for its efficiency, reliability, and versatility.
+                Designed for short- to medium-haul routes, it is widely used by airlines
+                around the globe for its efficiency, reliability, and versatility.
             </p>
 
             <h3>Quick Facts</h3>
@@ -51,16 +59,51 @@
             </ul>
 
             <p class="future-note">
-                In future versions, you will be able to click different parts of the aircraft
-                to learn more about engines, wings, landing gear, and cockpit systems.
+                Click the highlighted areas on the aircraft image to learn more about
+                major systems and components.
             </p>
         </div>
 
     </section>
 
+    <section>
+
+        <div class="hotspot-info" id="engine-info">
+            <h4>Engines</h4>
+            <p>
+                The Boeing 737 is powered by CFM International turbofan engines, designed
+                for fuel efficiency, reduced noise, and long-term reliability. They generate 27,000 pounnds of thrust
+            </p>
+        </div>
+
+        <div class="hotspot-info" id="wing-info">
+            <h4>Wings</h4>
+            <p>
+                The swept wings provide aerodynamic efficiency and are often equipped
+                with winglets to reduce drag and improve fuel economy.
+            </p>
+        </div>
+
+        <div class="hotspot-info" id="gear-info">
+            <h4>Landing Gear</h4>
+            <p>
+                The reinforced landing gear allows the 737 to safely operate from
+                shorter runways commonly used at regional airports.
+            </p>
+        </div>
+
+        <div class="hotspot-info" id="cockpit-info">
+            <h4>Cockpit</h4>
+            <p>
+                The cockpit features modern avionics, glass displays, and advanced
+                flight management systems to assist pilots during all phases of flight.
+            </p>
+        </div>
+
+    </section>
     <section class="gallery">
-        <img src="images/737max10.jpg" alt="Boeing 737 MAX">
-        <img src="images/unitedmax9.avif" alt="Boeing 737 operated by United Airlines">
+        <img src="images/737max10.jpg" alt="Boeing 737 MAX 10">
+        <img src="images/unitedmax9.avif" alt="United Airlines Boeing 737">
     </section>
 
 </main>
@@ -81,6 +124,8 @@
         <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
     </div>
 </footer>
+
+<script src="javascript.js"></script>
 
 </body>
 </html>
